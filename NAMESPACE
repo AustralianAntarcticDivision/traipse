@@ -25,7 +25,11 @@ export(track_time)
 export(track_time_spent)
 export(track_tracks)
 export(track_turn)
-importFrom(geographiclib,geodesic_inverse)
-importFrom(geographiclib,geodesic_path_fast)
-importFrom(stats,approxfun)
-importFrom(stats,setNames)
+importFrom(geographiclib,
+  geodesic_inverse,
+  geodesic_path_fast
+)
+importFrom(stats,
+  approxfun,
+  setNames
+)

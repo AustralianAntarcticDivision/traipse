@@ -1,3 +1,23 @@
+# traipse dev
+
+* New track model: `TRACK()` and `as_track()` build keyed tables of tracks and
+  fixes (0-based `.track` and `.fix`, ordered by date-time within track), with
+  the validity rules of the 'trip' package and an explicit `policy` ("error"
+  or "repair", which records what it changed). `track_fixes()`,
+  `track_tracks()`, `track_segments()` and `track_metrics()` return the tables.
+
+* New `track_cells()` and `track_time_spent()`: exact overlay of planar track
+  segments on a regular grid, and time spent per cell. Matches
+  `trip::rasterize()` (trip 1.10.0) without 'sp', 'raster' or 'spatstat'.
+
+* New `track_speedfilter()` and `track_sda()`, ports of `trip::speedfilter()`
+  and `trip::sda()` that return a flag per fix. The two-segment speed now uses
+  the right pairs of fixes for longitude and latitude data, which 'trip'
+  1.10.0 did not.
+
+* The pipe `%>%` is no longer re-exported (follows the removal of
+  'R/utils-pipe.R'), and 'magrittr' is no longer imported.
+
 # traipse 0.4.0
 
 * Package repository has changed to now https://github.com/AustralianAntarcticDivision/traipse, for issues and information.

@@ -1,6 +1,6 @@
 Package: traipse
 Title: Shared Tools for Tracking Data
-Version: 0.4.0
+Version: 0.4.0.9000
 Authors@R: 
     c(
     person(given = "Michael", 
@@ -19,12 +19,11 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Depends: R (>= 2.10)
 Imports: 
-    magrittr,
     geodist,
     geographiclib,
+    methods,
     stats
 URL: https://github.com/AustralianAntarcticDivision/traipse
 BugReports: https://github.com/AustralianAntarcticDivision/traipse/issues
@@ -36,3 +35,4 @@ Suggests:
     tidyr,
     spelling
 Language: en-US
+Config/roxygen2/version: 8.1.0
